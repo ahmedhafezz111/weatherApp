@@ -131,7 +131,7 @@ async function search() {
         await getCairo('Cairo');
         return;
     }
-        const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=d950a8bc90754dddbbc215136240312&q=${query}&days=3&aqi=no&alerts=no`);
+        const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d950a8bc90754dddbbc215136240312&q=${query}&days=3&aqi=no&alerts=no`);
         const data = await res.json();
 
 

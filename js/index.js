@@ -3,7 +3,7 @@ let list = [];
 
 async function getCairo(cairo) {
 
-    let res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=d950a8bc90754dddbbc215136240312&q=${cairo}&days=3&aqi=no&alerts=no`);
+    let res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d950a8bc90754dddbbc215136240312&q=${cairo}&days=3&aqi=no&alerts=no`);
     let data = await res.json();
     list = [data]; 
     console.log(list);
@@ -17,7 +17,7 @@ async function getCairo(cairo) {
 getCairo('Cairo');
 
 async function getApi(country) {
-    let res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=d950a8bc90754dddbbc215136240312&q=${country}&days=3&aqi=no&alerts=no`);
+    let res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d950a8bc90754dddbbc215136240312&q=${country}&days=3&aqi=no&alerts=no`);
     let data = await res.json();
     list = [data]; 
     console.log(list);
